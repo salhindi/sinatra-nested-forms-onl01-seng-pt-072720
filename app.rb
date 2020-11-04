@@ -18,7 +18,7 @@ module FormsLab
       @ships = Ship.all(params[:pirate][:ships])
     
     
-      @ships.map do |s|
+      @ships.each do |s|
         Ship.new(s)
       end
         
