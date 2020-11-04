@@ -15,7 +15,13 @@ module FormsLab
     post '/pirates' do 
       # binding.pry
       @pirate = Pirate.new(params[:pirate])
+    
+    
       @ships.map do |s|
+        Ship.new(s)
+      end
+        
+        
       @ships = Ship.all
       
       
