@@ -18,6 +18,8 @@ module FormsLab
       
       @ships = Ship.all
       
+      @ships.map do |s|
+      
       erb :'pirates/show'
     end
 
